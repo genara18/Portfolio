@@ -1,0 +1,207 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background-color: #37376d;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #191927;
+            padding: 20px 8%;
+            border-bottom: 2px solid mediumpurple;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            color: #c4b5fd;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #c4b5fd;
+        }
+
+        .hero {
+           padding: 50px 8%;
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 30px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        h1 span, h2 {
+            color: #c4b5fd;
+        }
+
+        .hero-text {
+            margin: 15px 0;
+        }
+
+        .hero img {
+            width: 250px;
+            height: 250;
+            object-fit: cover;
+            border: 3px solid #a78bfa;
+            border-radius: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #a78bfa;
+            color: #10101a;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        section {
+            padding: 50px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .card {
+            background-color: #191927;
+            border: 1px solid #38304f;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        #about p {
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .skills-grid .card {
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #c4b5fd;
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #5e5e94;
+        }
+
+        th, td {
+            border: 3px solid #51456b;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #443267;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: #191927;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            color: #c4b5fd;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #51456b;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #191927;
+        }
+
+        footer a {
+            color: #c4b5fd;
+        }
+
+        @media (max-width: 412px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 35px 5%;
+            } 
+        }
